@@ -1,0 +1,689 @@
+@import 'reset';
+@import'fonts';
+@import'mixin';
+
+.site {
+	max-width: 1440px;
+	margin: 0 auto;
+
+
+	// header
+	.header {
+		display: flex;
+		justify-content: space-between;
+		max-width: 960px;
+		margin: 0 auto;
+
+	}
+
+	.logo {
+		padding: 18px 0;
+	}
+
+	.menu {
+		display: flex;
+		column-gap: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.menu li a {
+		font-family: 'Montserrat';
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #404040;
+	}
+
+	// header end
+	// obses
+	.obses {
+		background: url(../img/tbg.png) center/cover no-repeat;
+		max-width: 1440px;
+		padding-top: 105px;
+
+		.our {
+			margin: 0 auto;
+			margin-bottom: 55px;
+			max-width: 672px;
+
+			.title-top {
+				font-family: 'Montserrat';
+				font-size: 44px;
+				line-height: 55px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #fff;
+			}
+
+
+		}
+
+	}
+
+	.title {
+		position: relative;
+	}
+
+	.title::after {
+		content: '';
+		width: 80px;
+		height: 2px;
+		background-color: #fff;
+		left: calc(50% - 40px);
+		bottom: -28px;
+		position: absolute;
+
+	}
+
+	.obses p {
+		font-family: 'Vollkorn';
+		font-size: 15px;
+		line-height: 20px;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.81);
+		padding-bottom: 75px;
+	}
+
+	// obses end
+	// get
+	.get {
+		background: #FEFEC9;
+		padding-bottom: 59px;
+	}
+
+	.x {
+		text-align: center;
+		margin-bottom: 34px;
+	}
+
+	.x img {
+		margin-top: -26px;
+	}
+
+	.get p {
+		max-width: 940px;
+		font-family: 'Vollkorn';
+		font-size: 18px;
+		line-height: 25px;
+		text-align: center;
+		color: #47474F;
+		margin: 0 auto;
+		margin-bottom: 39px;
+	}
+
+	.touch {
+		border-top: 1px solid #47474F;
+		max-width: 161px;
+		border-bottom: 2px solid #47474F;
+		position: relative;
+		margin: 0 auto;
+		padding: 13px 33.5px 20px 34.5px;
+	}
+
+	.touch a {
+		font-family: 'Vollkorn';
+		font-size: 16px;
+		text-align: center;
+		color: #47474F;
+		line-height: 20px;
+	}
+
+	.touch::before {
+		content: '';
+		width: 1px;
+		height: 53px;
+		left: -1px;
+		background-color: #47474F;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+	}
+
+	.touch::after {
+		content: '';
+		width: 1px;
+		height: 53px;
+		position: absolute;
+		right: -1px;
+		top: 0;
+		bottom: 0;
+		background-color: #47474F;
+
+	}
+
+	// get end
+	// how
+	.how {
+		margin: 0 auto;
+		padding-top: 79px;
+	}
+
+	.title-how {
+		font-family: 'Montserrat';
+		font-size: 23px;
+		line-height: 36px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #333333;
+		margin-bottom: 73px;
+		position: relative;
+	}
+
+	.title::after {
+		content: '';
+		width: 80px;
+		height: 2px;
+		left: calc(50% - 40px);
+		bottom: -28px;
+		background: rgba(0, 0, 0, 0.09);
+		position: absolute;
+
+	}
+
+	.brand {
+		max-width: 940px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		column-gap: 20px;
+
+
+		h3 {
+			font-family: 'Montserrat';
+			font-size: 16px;
+			line-height: 20px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #333333;
+			margin-bottom: 20px;
+
+		}
+
+		p {
+			font-family: 'Vollkorn';
+			font-size: 15px;
+			line-height: 22px;
+			text-align: center;
+			color: #333333;
+			max-width: 297px;
+			margin-bottom: 74px;
+		}
+	}
+
+	.img {
+		background: #F5F5F5;
+		padding: 50px 87px 50px 86px;
+		max-width: 300px;
+		max-height: 219px;
+		margin-bottom: 38px;
+	}
+
+	// how end
+	// project
+	.project {
+		padding-top: 153px;
+		background-color: #f5f5f5;
+		padding-bottom: 89px;
+
+
+		.title-project {
+			font-family: 'Montserrat';
+			font-size: 23px;
+			line-height: 36px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #333333;
+			margin-bottom: 73px;
+		}
+
+		.projects {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 20px;
+			max-width: 940px;
+			margin: 0 auto;
+
+
+			.pro {
+				background-color: #fff;
+			}
+
+
+
+			.img0 {
+				max-width: 300px;
+				max-height: 300px;
+				margin-bottom: 19px;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			h4 {
+				@include h4;
+				margin-bottom: 4px;
+			}
+
+			p {
+				font-family: 'Vollkorn';
+				font-size: 14px;
+				line-height: 20px;
+				text-align: center;
+				color: #333333;
+				padding-bottom: 20px;
+
+			}
+		}
+	}
+
+	// project end
+	// team
+	.team {
+		padding-top: 79px;
+		padding-bottom: 100px;
+
+		.inner {
+			max-width: 940px;
+			margin: 0 auto;
+
+			.title-team {
+				font-family: 'Montserrat';
+				font-size: 23px;
+				line-height: 36px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #333333;
+				margin-bottom: 73px;
+			}
+
+			.teamnates {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+				column-gap: 20px;
+
+
+
+				.pro {
+					text-align: center;
+
+					h5 {
+						font-family: 'Montserrat';
+						font-size: 16px;
+						text-transform: uppercase;
+						margin-bottom: 6px;
+					}
+
+					span {
+						font-family: 'Vollkorn';
+						font-size: 14px;
+						color: #333333;
+						display: block;
+						margin-bottom: 30px;
+					}
+				}
+			}
+
+			.img00 {
+				max-width: 220px;
+			}
+
+
+			.img00 img {
+				width: 100%;
+				height: 220px;
+				margin-bottom: 20px;
+			}
+
+			.itm {
+				display: flex;
+				column-gap: 13px;
+				justify-content: center;
+				vertical-align: middle;
+
+				li {
+					a {
+						img {
+							display: block;
+							width: 29px;
+							height: 14px;
+						}
+					}
+				}
+
+			}
+
+			.itm2 {
+				display: flex;
+				column-gap: 13px;
+				justify-content: center;
+				vertical-align: middle;
+
+				li {
+					a {
+						img {
+							display: block;
+							width: 29px;
+							height: 14px;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	// team end
+	// article
+	.article {
+		background-color: #f5f5f5;
+		padding-top: 69px;
+		padding-bottom: 98px;
+		text-align: center;
+
+		.imgqq {
+			text-align: center;
+			margin-bottom: 65px;
+		}
+
+		.julu {
+			position: relative;
+		}
+
+		.julu::after {
+			content: '';
+			position: absolute;
+			width: 2px;
+			top: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.04);
+			right: 0;
+
+		}
+
+		.pro {
+			display: inline-block;
+			padding: 0 60px;
+
+
+
+			p {
+				font-family: 'Vollkorn';
+				font-size: 26px;
+				line-height: 33px;
+				text-align: center;
+				color: #333333;
+				max-width: 338px;
+				margin-bottom: 24px;
+			}
+
+			span {
+				font-family: 'Montserrat';
+				font-size: 14px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #ABABAB;
+				display: block;
+			}
+		}
+
+		.juliu,
+		.rachael {
+			margin-bottom: 10px;
+			text-align: center;
+		}
+	}
+
+	// article end
+	// get in touch
+	.intouch {
+		background: url(../img/bbcg.png) center/cover no-repeat;
+		padding-top: 79px;
+		padding-bottom: 75px;
+
+		.inner {
+			max-width: 940px;
+			margin: 0 auto;
+
+			.title-intouch {
+				font-family: 'Montserrat';
+				font-size: 23px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #333333;
+			}
+
+			.about {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				text-align: center;
+
+				h4 {
+					@include h4;
+					margin-bottom: 20px;
+				}
+			}
+		}
+
+		.adres {
+			p {
+				max-width: 174px;
+				font-family: 'Vollkorn';
+				font-size: 17px;
+				line-height: 22px;
+				color: #212121;
+				margin: 0 auto;
+			}
+		}
+
+		.img001 {
+			margin: 0 auto;
+			margin-bottom: 26px;
+			width: 44px;
+			height: 65px;
+			margin-top: 86px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.lmail {
+			.img002 {
+				margin: 0 auto;
+				margin-bottom: 36px;
+				margin-top: 93px;
+				width: 70px;
+				height: 50px;
+			}
+
+			span {
+				font-family: 'Vollkorn';
+				font-size: 17px;
+				text-align: center;
+				color: #212121;
+				display: block;
+			}
+
+			a {
+				font-family: 'Vollkorn';
+				font-size: 17px;
+				text-align: center;
+				color: #212121;
+				display: block;
+				margin-bottom: 22px;
+			}
+
+			p {
+				font-family: 'Vollkorn';
+				font-size: 17px;
+				text-align: center;
+				color: #212121;
+				max-width: 100px;
+				margin: 0 auto;
+				line-height: 22px;
+
+			}
+
+
+
+		}
+
+		.social {
+
+			.img003 {
+				margin: 0 auto;
+				margin-bottom: 28px;
+				margin-top: 93px;
+				width: 68px;
+				height: 56px;
+			}
+
+			ul {
+				display: flex;
+				flex-flow: column;
+				row-gap: 11px;
+
+
+				li {
+					text-align: left;
+
+					a {
+						font-family: 'Vollkorn';
+						font-size: 17px;
+						color: #212121;
+						display: block;
+						max-width: 96px;
+						margin: 0 auto;
+
+						img {
+							width: 14px;
+							height: 14px;
+							display: inline-block;
+							margin-right: 9px;
+						}
+					}
+				}
+			}
+		}
+
+
+	}
+
+	// get in touch end
+	// form
+	.form {
+		padding-top: 69px;
+		padding-bottom: 75px;
+		background-color: #000;
+
+		.inner {
+			max-width: 940px;
+			margin: 0 auto;
+
+			form {
+				display: grid;
+				grid-template-rows: repeat(auto-fit minmax(564px, 1fr));
+				max-width: 564px;
+				margin: 0 auto;
+
+				::placeholder {
+					font-family: 'Vollkorn';
+					font-style: italic;
+					font-weight: 400;
+					font-size: 17px;
+					line-height: 22px;
+					color: #FFFFFF;
+				}
+
+				.input {
+					padding: 18px 31px;
+					font-family: 'Vollkorn';
+					font-style: italic;
+					font-size: 17px;
+					color: #FFFFFF;
+				}
+
+			}
+
+
+
+			.int1 {
+				background: rgba(255, 255, 255, 0.18);
+
+			}
+
+			.int2 {
+				background: rgba(255, 255, 255, 0.2);
+			}
+
+			.button {
+				max-width: 260px;
+				margin: 0 auto;
+				margin-top: 22px;
+				margin-bottom: 37px;
+				border-top: 1px solid #7EC4BD;
+				border-bottom: 2px solid #7EC4BD;
+				position: relative;
+				background-color: #000;
+				padding: 15px 60px;
+
+				button {
+					font-family: 'Vollkorn';
+					font-style: italic;
+					font-weight: 400;
+					font-size: 17px;
+					line-height: 22px;
+					text-align: center;
+					color: #8BCAC3;
+					background-color: #000;
+				}
+			}
+
+			.button::before {
+				content: '';
+				position: absolute;
+				left: -1px;
+				width: 1px;
+				top: 0;
+				bottom: 0;
+				background-color: #7EC4BD;
+
+			}
+
+			button::after {
+				content: '';
+				position: absolute;
+				right: -1px;
+				width: 1px;
+				top: 0;
+				bottom: 0;
+				background-color: #7EC4BD;
+			}
+
+
+			.logotip {
+				width: 43px;
+				height: 46px;
+				margin: 0 auto;
+				margin-bottom: 14px;
+			}
+
+			.a {
+				text-align: center;
+
+				a {
+					font-family: 'Vollkorn';
+					font-size: 15px;
+					color: rgba(255, 255, 255, 0.4);
+				}
+
+			}
+		}
+
+	}
+
+	// form end
+}
