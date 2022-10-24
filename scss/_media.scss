@@ -1,0 +1,54 @@
+@media screen and(max-width:941px) {
+
+	.brand,
+	.project .projects {
+		@include rasmlar;
+
+	}
+}
+
+@media screen and(max-width:919px) {
+	.julu {
+		&::after {
+			display: none;
+		}
+	}
+}
+
+@media screen and(max-width:899px) {
+	.team .inner .teamnates {
+		@include rasmlar;
+		row-gap: 20px;
+	}
+
+	.intouch {
+		padding-top: 79px;
+		padding-bottom: 75px;
+	}
+
+	.intouch .about {
+		@include rasmlar;
+	}
+}
+
+@media screen and(max-width:768px) {
+	.obses .our .title-top {
+		font-size: 35px;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.form {
+		padding: 10px 20px;
+	}
+}
+
+@media screen and(max-width:480px) {
+	.burger {
+		display: flex;
+	}
+
+	.menu {
+		display: none;
+	}
+}
